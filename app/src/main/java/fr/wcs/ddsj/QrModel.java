@@ -7,10 +7,16 @@ package fr.wcs.ddsj;
 public class QrModel {
     String question;
     String reponse;
+    int score;
 
-    public QrModel(String question, String reponse) {
+    public QrModel(){
+
+    }
+
+    public QrModel(String question, String reponse, int score) {
         this.question = question;
         this.reponse = reponse;
+        this.score = score;
     }
 
     public String getQuestion() {
@@ -27,5 +33,13 @@ public class QrModel {
 
     public void setReponse(String reponse) {
         this.reponse = reponse;
+    }
+
+    public int getScore() {
+        return score;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
     }
 }
