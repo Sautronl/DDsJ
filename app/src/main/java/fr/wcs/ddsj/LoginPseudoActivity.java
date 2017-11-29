@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.util.Random;
+
 public class LoginPseudoActivity extends AppCompatActivity {
 
     @Override
@@ -25,10 +27,21 @@ public class LoginPseudoActivity extends AppCompatActivity {
                 String p1 = pseudoJOne.getText().toString().trim();
                 String p2 = pseudoJTwo.getText().toString().trim();
 
-                Intent i = new Intent();
-                i.putExtra("pseudo", p1);
-                i.putExtra("pseudo", p2);
+                Random r = new Random();
+                int valeurMin = 0;
+                int valeurMax = 1;
+                int player1 = valeurMin + r.nextInt(valeurMax - valeurMin);
+                int player2 = valeurMin + r.nextInt(valeurMax - valeurMin);
 
+                if (player1 >= player2){
+                    Intent i = new Intent(LoginPseudoActivity.this, MainActivity.class);
+                    i.putExtra("pseudo", p1);
+                    startActivity(i);
+                }else{
+                    Intent i = new Intent(LoginPseudoActivity.this, MainActivity.class);
+                    i.putExtra("pseudo", p2);
+                    startActivity(i);
+                }
             }
         });
     }
