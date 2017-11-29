@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">DDsJ</string>
     <string name="valider">Valider</string>
+    <string name="title_activity_question_main">QuestionMainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="faux">Faux</string>
+    <string name="changer">Changer</string>
 </resources>

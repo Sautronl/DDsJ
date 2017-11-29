@@ -28,8 +28,8 @@ public class LoginPseudoActivity extends AppCompatActivity {
                 String p2 = pseudoJTwo.getText().toString().trim();
 
                 Random r = new Random();
-                int valeurMin = 0;
-                int valeurMax = 1;
+                int valeurMin = 1;
+                int valeurMax = 99;
                 int player1 = valeurMin + r.nextInt(valeurMax - valeurMin);
                 int player2 = valeurMin + r.nextInt(valeurMax - valeurMin);
 
