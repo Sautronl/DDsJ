@@ -52,7 +52,6 @@ public class BottomNavMainActivity extends AppCompatActivity {
 //                   fragmentTransaction.commit();
 //                   break;
             }
-
             return true;
         }
     };
@@ -66,12 +65,12 @@ public class BottomNavMainActivity extends AppCompatActivity {
         mBotNav = (BottomNavigationView) findViewById(R.id.navigation);
         mBotNav.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
-        mNewPager.add(Fragment.instantiate(this,WrongFragment.class.getName()));
         mNewPager.add(Fragment.instantiate(this,MainFragment.class.getName()));
-        mNewPager.add(Fragment.instantiate(this,SkipFragment.class.getName()));
+        mNewPager.add(Fragment.instantiate(this,MainFragment.class.getName()));
+        mNewPager.add(Fragment.instantiate(this,MainFragment.class.getName()));
 
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        mFrag = mNewPager.get(1);
+        mFrag = mNewPager.get(0);
         fragmentTransaction.replace(R.id.content_frame,mFrag);
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();

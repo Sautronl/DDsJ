@@ -1,0 +1,227 @@
+{
+  "project_info": {
+    "project_number": "723328568064",
+    "firebase_url": "https://fir-test-1f159.firebaseio.com",
+    "project_id": "fir-test-1f159",
+    "storage_bucket": "fir-test-1f159.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:723328568064:android:e0bf56392238174d",
+        "android_client_info": {
+          "package_name": "com.example.bastienwcs.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "723328568064-e33o8avj5f5476lkaokqdvddrnbhp7pj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bastienwcs.firebase",
+            "certificate_hash": "d10c7908868ff2bf0e5630fd28c08cf67757a5fc"
+          }
+        },
+        {
+          "client_id": "723328568064-m783hvegsjfp9d09nr2n9ghll4nfbbsj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjgBytPqb6r55Mdn8TpwNWu_iFStWe-D0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "723328568064-m783hvegsjfp9d09nr2n9ghll4nfbbsj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:723328568064:android:77b7ff8e487eacb4",
+        "android_client_info": {
+          "package_name": "fr.wildcodeschool.designpatternssample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "723328568064-2okupibh2avb2bgct5mqdb4ai54h6rnm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fr.wildcodeschool.designpatternssample",
+            "certificate_hash": "d10c7908868ff2bf0e5630fd28c08cf67757a5fc"
+          }
+        },
+        {
+          "client_id": "723328568064-m783hvegsjfp9d09nr2n9ghll4nfbbsj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjgBytPqb6r55Mdn8TpwNWu_iFStWe-D0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "723328568064-m783hvegsjfp9d09nr2n9ghll4nfbbsj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:723328568064:android:e4112bcde1e1e6fa",
+        "android_client_info": {
+          "package_name": "fr.wildcodeschool.atelierdesignpatterns"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "723328568064-afincpatir3baav47sn8aonlc8gv6oht.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fr.wildcodeschool.atelierdesignpatterns",
+            "certificate_hash": "378c47cdc0a94c66d2471fbe2a4a9580e163fabe"
+          }
+        },
+        {
+          "client_id": "723328568064-m3bqp44jh1861ba99gjr60oc5l7b8i4g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fr.wildcodeschool.atelierdesignpatterns",
+            "certificate_hash": "397ef71fcf424841ed235e83cac8158e0168e995"
+          }
+        },
+        {
+          "client_id": "723328568064-fol5v3lrgvaq1te70vqi7gpfffbeq058.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fr.wildcodeschool.atelierdesignpatterns",
+            "certificate_hash": "a7709d68792e755543ba886c5f54d0b3811e1b70"
+          }
+        },
+        {
+          "client_id": "723328568064-38iacqo1u79qgs3tnm6hhjd9jtuq56nv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fr.wildcodeschool.atelierdesignpatterns",
+            "certificate_hash": "9d792ecb57db58468d110b82e4f0f5c33731fa01"
+          }
+        },
+        {
+          "client_id": "723328568064-n621t29u47koms1ke8smojant48da85l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fr.wildcodeschool.atelierdesignpatterns",
+            "certificate_hash": "2c8356f7f420c9f0061d1aaa632dfad44327e303"
+          }
+        },
+        {
+          "client_id": "723328568064-q5ge1r8c4dfv0kmunh7ksra1tgouj62j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fr.wildcodeschool.atelierdesignpatterns",
+            "certificate_hash": "d10c7908868ff2bf0e5630fd28c08cf67757a5fc"
+          }
+        },
+        {
+          "client_id": "723328568064-m783hvegsjfp9d09nr2n9ghll4nfbbsj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjgBytPqb6r55Mdn8TpwNWu_iFStWe-D0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "723328568064-m783hvegsjfp9d09nr2n9ghll4nfbbsj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:723328568064:android:47f0b1a23a9714f5",
+        "android_client_info": {
+          "package_name": "fr.wcs.ddsj"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "723328568064-261v7741iriqtlet2ios2o8d937m17ku.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fr.wcs.ddsj",
+            "certificate_hash": "2c8356f7f420c9f0061d1aaa632dfad44327e303"
+          }
+        },
+        {
+          "client_id": "723328568064-m783hvegsjfp9d09nr2n9ghll4nfbbsj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjgBytPqb6r55Mdn8TpwNWu_iFStWe-D0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "723328568064-m783hvegsjfp9d09nr2n9ghll4nfbbsj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
