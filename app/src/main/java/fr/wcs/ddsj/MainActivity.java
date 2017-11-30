@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static String USER;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         Intent res = getIntent();
         String pseudoPl = res.getStringExtra("pseudo");
+        USER = pseudoPl;
         pseudoDD.setText(pseudoPl);
 
         free.setOnClickListener(new View.OnClickListener() {

@@ -16,5 +16,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fin"
+        android:text="fin"
+        />
 
 </android.support.constraint.ConstraintLayout>

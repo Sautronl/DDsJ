@@ -20,7 +20,8 @@
         <activity android:name=".LoginPseudoActivity" />
         <activity
             android:name=".BottomNavMainActivity"
-            android:label="@string/title_activity_question_main"></activity>
+            android:label="@string/title_activity_question_main" />
+        <activity android:name=".FinishActivity"></activity>
     </application>
 
 </manifest>

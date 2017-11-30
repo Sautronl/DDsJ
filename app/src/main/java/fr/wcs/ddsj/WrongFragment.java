@@ -22,8 +22,10 @@ public class WrongFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_wrong, container, false);
+
+        BottomNavMainActivity.mBotNav.setSelectedItemId(R.id.navigation_wrong);
+        View view = inflater.inflate(R.layout.fragment_wrong, container, false);
+        return view;
     }
 
 }
