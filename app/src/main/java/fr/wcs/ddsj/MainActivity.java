@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static String USER;
+    //public static String USER;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,10 +19,10 @@ public class MainActivity extends AppCompatActivity {
         TextView pseudoDD = (TextView) findViewById(R.id.pseudoDD);
         ImageButton free = (ImageButton) findViewById(R.id.free);
 
-        Intent res = getIntent();
-        String pseudoPl = res.getStringExtra("pseudo");
-        USER = pseudoPl;
-        pseudoDD.setText(pseudoPl);
+//        Intent res = getIntent();
+//        String pseudoPl = res.getStringExtra("pseudo");
+//        USER = pseudoPl;
+//        pseudoDD.setText(pseudoPl);
 
         free.setOnClickListener(new View.OnClickListener() {
             @Override
