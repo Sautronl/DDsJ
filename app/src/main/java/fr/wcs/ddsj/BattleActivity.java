@@ -2,6 +2,7 @@ package fr.wcs.ddsj;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -23,10 +24,12 @@ public class BattleActivity extends AppCompatActivity {
     private QrModel mQrModel;
 
     private Button mButtonTeam1,mButtonTeam2, mButtonEx;
-    private TextView mQuestionText, mReponseText;
+    private TextView mQuestionText, mReponseText, mPointTeam1,mPointTeam2;
     private Random rand = new Random();
     int mRngQuestion;
-    String mResultat;
+    String mResultat, mPointString;
+    public int mPoint1 = 0;
+    public int mPoint2 = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +45,11 @@ public class BattleActivity extends AppCompatActivity {
 
         mQuestionText = findViewById(R.id.questionText);
         mReponseText = findViewById(R.id.reponseText);
+        mPointTeam1 = findViewById(R.id.pointTeam1);
+        mPointTeam2 = findViewById(R.id.pointTeam2);
+
+        mPointTeam1.setText(mPoint1);
+        mPointTeam2.setText(mPoint2);
 
         mRef.addValueEventListener(new ValueEventListener() {
             @Override
@@ -73,6 +81,26 @@ public class BattleActivity extends AppCompatActivity {
             }
         });
 
+        mButtonTeam1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+        mButtonTeam2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+        mButtonEx.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
     }
 
     private void rng(int child){
