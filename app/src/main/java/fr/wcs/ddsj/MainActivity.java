@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         free.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, BottomNavMainActivity.class));
+                startActivity(new Intent(MainActivity.this, SelectTeamActivity.class));
             }
         });
     }
