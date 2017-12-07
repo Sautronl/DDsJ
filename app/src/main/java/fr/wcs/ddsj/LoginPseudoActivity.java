@@ -13,7 +13,7 @@ import java.util.Random;
 
 public class LoginPseudoActivity extends AppCompatActivity {
 
-    public static String USERTWO;
+    //public static String USERTWO;
     private EditText mPseudo1,mPseudo2;
     public String mTeam1,mTeam2;
 
@@ -45,7 +45,8 @@ public class LoginPseudoActivity extends AppCompatActivity {
                 mTeam1 = mPseudo1.getText().toString().trim();
                 mTeam2 = mPseudo2.getText().toString().trim();
                     Intent i = new Intent(LoginPseudoActivity.this, MainActivity.class);
-                    //i.putExtra("pseudo", p1);
+                    i.putExtra("pseudo1", mTeam1);
+                    i.putExtra("pseudo2", mTeam2);
                     startActivity(i);
 //                }else{
 //                    USERTWO = p1;

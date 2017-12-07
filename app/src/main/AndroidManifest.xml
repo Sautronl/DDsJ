@@ -23,7 +23,8 @@
             android:label="@string/title_activity_question_main" />
         <activity android:name=".FinishActivity" />
         <activity android:name=".SelectTeamActivity" />
-        <activity android:name=".BattleActivity"></activity>
+        <activity android:name=".BattleActivity" />
+        <activity android:name=".PointActivity"></activity>
     </application>
 
 </manifest>

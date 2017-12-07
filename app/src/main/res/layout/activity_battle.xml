@@ -69,12 +69,11 @@
         app:layout_constraintTop_toTopOf="@+id/buttonEx" />
 
     <TextView
-        android:id="@+id/nomTeam2"
+        android:id="@+id/nomTeam1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Team1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -84,7 +83,6 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginTop="8dp"
-        android:text="Team2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -94,7 +92,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="TextView"
         app:layout_constraintEnd_toEndOf="@+id/nomTeam2"
         app:layout_constraintStart_toStartOf="@+id/nomTeam2"
         app:layout_constraintTop_toBottomOf="@+id/nomTeam2" />
@@ -104,7 +101,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="TextView"
         app:layout_constraintEnd_toEndOf="@+id/NomTeam2"
         app:layout_constraintTop_toBottomOf="@+id/NomTeam2" />
 
