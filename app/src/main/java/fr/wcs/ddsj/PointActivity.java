@@ -9,7 +9,7 @@ import android.widget.TextView;
 public class PointActivity extends AppCompatActivity {
 
     private Handler mHandler = new Handler();
-    private static int DURATION2 = 4500;
+    private static int DURATION2 = 1000;
     private TextView textVTeam1,textVTeam2,textVPoint1,textVPoint2;
 
     @Override
@@ -26,8 +26,8 @@ public class PointActivity extends AppCompatActivity {
         Intent score = getIntent();
         String score1 = score.getStringExtra("point1");
         String score2 = score.getStringExtra("point2");
-        String tag1 = score.getStringExtra("team1");
-        String tag2 = score.getStringExtra("team2");
+        String tag1 = score.getStringExtra("teamName1");
+        String tag2 = score.getStringExtra("teamName2");
 
 
         textVTeam1.setText(tag1);

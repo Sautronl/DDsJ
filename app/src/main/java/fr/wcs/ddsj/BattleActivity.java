@@ -28,7 +28,7 @@ public class BattleActivity extends AppCompatActivity {
     private TextView mQuestionText, mReponseText, mPointTeam1,mPointTeam2, mTeamPlay1,mTeamPlay2;
     private Random rand = new Random();
     int mRngQuestion;
-    String mResultat, mPointString1, mPointString2;
+    String mResultat, mPointString1, mPointString2,mBattleP1,mBattleP2;
     public int mPoint1 = 0;
     public int mPoint2 = 0;
 
@@ -52,15 +52,11 @@ public class BattleActivity extends AppCompatActivity {
         mTeamPlay2 = findViewById(R.id.nomTeam2);
 
         Intent battle = getIntent();
-        final String battleP1 = battle.getStringExtra("battleTeam1");
-        final String battleP2 = battle.getStringExtra("battleTeam2");
+        mBattleP1 = battle.getStringExtra("battleTeam1");
+        mBattleP2 = battle.getStringExtra("battleTeam2");
 
-        mPointString1 = String.valueOf(mPoint1);
-        mPointString2 = String .valueOf(mPoint2);
-
-
-        mTeamPlay1.setText(battleP1);
-       //mTeamPlay2.setText(battleP2);
+        mTeamPlay1.setText(mBattleP1);
+       //mTeamPlay2.setText(mBattleP2);
 
         mRef.addValueEventListener(new ValueEventListener() {
             @Override
@@ -95,16 +91,19 @@ public class BattleActivity extends AppCompatActivity {
         mButtonTeam1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                mPointString1 = String.valueOf(mPoint1);
                 mPointTeam1.setText(mPointString1);
                 mPoint1 += 1;
                 if (mPoint1 == 10){
                    Intent resultat1 = new Intent(BattleActivity.this, FinishActivity.class);
-                   resultat1.putExtra("team1", battleP1);
+                   resultat1.putExtra("teamName1", mBattleP1);
 
                 }
                 Intent teamOne = new Intent(BattleActivity.this, PointActivity.class);
                 teamOne.putExtra("point1",mPointString1);
                 teamOne.putExtra("point2", mPointString2);
+                teamOne.putExtra("team1",mBattleP1);
+                teamOne.putExtra("team2", mBattleP2);
                 startActivity(teamOne);
             }
         });
@@ -112,16 +111,19 @@ public class BattleActivity extends AppCompatActivity {
         mButtonTeam2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                mPointString2 = String .valueOf(mPoint2);
                 mPointTeam2.setText(mPointString2);
                 mPoint2 += 1;
                 if (mPoint2 == 10){
                     Intent resultat2 = new Intent(BattleActivity.this, FinishActivity.class);
-                    resultat2.putExtra("team2", battleP2);
+                    resultat2.putExtra("teamName2", mBattleP2);
                     startActivity(resultat2);
                 }
                 Intent teamTwo = new Intent(BattleActivity.this, PointActivity.class);
                 teamTwo.putExtra("point1",mPointString1);
                 teamTwo.putExtra("point2", mPointString2);
+                teamTwo.putExtra("teamName1",mBattleP1);
+                teamTwo.putExtra("teamName2", mBattleP2);
                 startActivity(teamTwo);
             }
         });
