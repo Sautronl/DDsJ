@@ -29,8 +29,8 @@ public class BattleActivity extends AppCompatActivity {
     private Random rand = new Random();
     int mRngQuestion;
     String mResultat, mPointString1, mPointString2,mBattleP1,mBattleP2;
-    public int mPoint1 = 0;
-    public int mPoint2 = 0;
+     int mPoint1 = 0;
+     int mPoint2 = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

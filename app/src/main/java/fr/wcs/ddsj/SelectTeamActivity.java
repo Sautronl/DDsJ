@@ -18,18 +18,21 @@ public class SelectTeamActivity extends AppCompatActivity {
         mButtonTeam1 = findViewById(R.id.button_team1);
         mButtonTeam2 = findViewById(R.id.button_team2);
 
-        Intent playerBis = getIntent();
-        final String playerBis1 = playerBis.getStringExtra("pseudoBis1");
-        final String playerBis2 = playerBis.getStringExtra("pseudoBis2");
+//        Intent playerBis = getIntent();
+//        final String playerBis1 = playerBis.getStringExtra("pseudoBis1");
+//        final String playerBis2 = playerBis.getStringExtra("pseudoBis2");
 
-        mButtonTeam1.setText(playerBis1);
-        mButtonTeam2.setText(playerBis2);
+        TeamModel teamModelName = getIntent().getExtras().getParcelable("teamName");
+            mButtonTeam1.setText(teamModelName.getTeam1());
+            mButtonTeam2.setText(teamModelName.getTeam2());
+
+
 
         mButtonTeam1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent bisP = new Intent(SelectTeamActivity.this, BattleActivity.class);
-                bisP.putExtra("battleTeam1", playerBis1);
+                //bisP.putExtra("battleTeam1", playerBis1);
                 startActivity(bisP);
             }
         });
@@ -38,7 +41,7 @@ public class SelectTeamActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent bisP2 = new Intent(SelectTeamActivity.this, BattleActivity.class);
-                bisP2.putExtra("battleTeam2", playerBis2);
+                //bisP2.putExtra("battleTeam2", playerBis2);
                 startActivity(bisP2);
             }
         });

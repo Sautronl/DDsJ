@@ -19,9 +19,9 @@ public class MainActivity extends AppCompatActivity {
         TextView pseudoDD = (TextView) findViewById(R.id.pseudoDD);
         ImageButton free = (ImageButton) findViewById(R.id.free);
 
-        Intent player = getIntent();
-        final String player1 = player.getStringExtra("pseudo1");
-        final String player2 = player.getStringExtra("pseudo2");
+//        Intent player = getIntent();
+//        final String player1 = player.getStringExtra("pseudo1");
+//        final String player2 = player.getStringExtra("pseudo2");
 
 
 //        Intent res = getIntent();
@@ -33,8 +33,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent in = new Intent(MainActivity.this, SelectTeamActivity.class);
-                in.putExtra("pseudoBis1", player1);
-                in.putExtra("pseudoBis2", player2);
+//                in.putExtra("pseudoBis1", player1);
+//                in.putExtra("pseudoBis2", player2);
                 startActivity(in);
             }
         });

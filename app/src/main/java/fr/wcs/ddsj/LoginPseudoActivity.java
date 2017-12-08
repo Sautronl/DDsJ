@@ -32,6 +32,13 @@ public class LoginPseudoActivity extends AppCompatActivity {
         valid.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String p1 = mPseudo1.getText().toString().trim();
+                String p2 = mPseudo2.getText().toString().trim();
+                TeamModel teamName = new TeamModel(p1,p2,0,0);
+                Intent i = new Intent(LoginPseudoActivity.this, MainActivity.class);
+                i.putExtra("team", teamName);
+                startActivity(i);
+
 //                String p1 = pseudoJOne.getText().toString().trim();
 //                String p2 = pseudoJTwo.getText().toString().trim();
 //                Random r = new Random();
@@ -42,12 +49,12 @@ public class LoginPseudoActivity extends AppCompatActivity {
 
                 //if (player1 >= player2){
                   //  USERTWO = p2;
-                mTeam1 = mPseudo1.getText().toString().trim();
-                mTeam2 = mPseudo2.getText().toString().trim();
-                    Intent i = new Intent(LoginPseudoActivity.this, MainActivity.class);
-                    i.putExtra("pseudo1", mTeam1);
-                    i.putExtra("pseudo2", mTeam2);
-                    startActivity(i);
+//                mTeam1 = mPseudo1.getText().toString().trim();
+//                mTeam2 = mPseudo2.getText().toString().trim();
+//                    Intent i = new Intent(LoginPseudoActivity.this, MainActivity.class);
+//                    i.putExtra("pseudo1", mTeam1);
+//                    i.putExtra("pseudo2", mTeam2);
+//                    startActivity(i);
 //                }else{
 //                    USERTWO = p1;
 //                    Intent i = new Intent(LoginPseudoActivity.this, MainActivity.class);
