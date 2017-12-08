@@ -23,22 +23,22 @@ public class PointActivity extends AppCompatActivity {
          textVPoint2 = findViewById(R.id.textVPoint2);
 
 
+        Intent score = getIntent();
+        String score1 = score.getStringExtra("point1");
+        String score2 = score.getStringExtra("point2");
+        String tag1 = score.getStringExtra("team1");
+        String tag2 = score.getStringExtra("team2");
+
+
+        textVTeam1.setText(tag1);
+        textVTeam2.setText(tag2);
+
+        textVPoint1.setText(score1);
+        textVPoint2.setText(score2);
 
         mHandler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent score = getIntent();
-                String score1 = score.getStringExtra("point1");
-                String score2 = score.getStringExtra("point2");
-                String tag1 = score.getStringExtra("team1");
-                String tag2 = score.getStringExtra("team2");
-
-
-                textVTeam1.setText(tag1);
-                textVTeam2.setText(tag2);
-
-                textVPoint1.setText(score1);
-                textVPoint2.setText(score2);
                 startActivity(new Intent(PointActivity.this, BattleActivity.class));
                 finish();
             }

@@ -58,8 +58,6 @@ public class BattleActivity extends AppCompatActivity {
         mPointString1 = String.valueOf(mPoint1);
         mPointString2 = String .valueOf(mPoint2);
 
-        mPointTeam1.setText(mPointString1);
-        mPointTeam2.setText(mPointString2);
 
         mTeamPlay1.setText(battleP1);
        //mTeamPlay2.setText(battleP2);
@@ -97,6 +95,7 @@ public class BattleActivity extends AppCompatActivity {
         mButtonTeam1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                mPointTeam1.setText(mPointString1);
                 mPoint1 += 1;
                 if (mPoint1 == 10){
                    Intent resultat1 = new Intent(BattleActivity.this, FinishActivity.class);
@@ -104,8 +103,8 @@ public class BattleActivity extends AppCompatActivity {
 
                 }
                 Intent teamOne = new Intent(BattleActivity.this, PointActivity.class);
-                teamOne.putExtra("point1",mPoint1);
-                teamOne.putExtra("point2", mPoint2);
+                teamOne.putExtra("point1",mPointString1);
+                teamOne.putExtra("point2", mPointString2);
                 startActivity(teamOne);
             }
         });
@@ -113,6 +112,7 @@ public class BattleActivity extends AppCompatActivity {
         mButtonTeam2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                mPointTeam2.setText(mPointString2);
                 mPoint2 += 1;
                 if (mPoint2 == 10){
                     Intent resultat2 = new Intent(BattleActivity.this, FinishActivity.class);
@@ -120,8 +120,8 @@ public class BattleActivity extends AppCompatActivity {
                     startActivity(resultat2);
                 }
                 Intent teamTwo = new Intent(BattleActivity.this, PointActivity.class);
-                teamTwo.putExtra("point1",mPoint1);
-                teamTwo.putExtra("point2", mPoint2);
+                teamTwo.putExtra("point1",mPointString1);
+                teamTwo.putExtra("point2", mPointString2);
                 startActivity(teamTwo);
             }
         });
